@@ -1,0 +1,34 @@
+#!/bin/sh
+
+__help() {
+cat <<EOT
+Any options are not working yet
+just run $0
+Also you can edit fvm2.pri file
+EOT
+}
+
+if [ $# -gt 0 ]; then
+  __help
+  exit 0
+fi
+
+###############################################################
+# Variables
+###############################################################
+
+PRO_FILE="fvm2.pro"
+QMAKE="qmake"
+
+###############################################################
+# Configure
+###############################################################
+
+$QMAKE -project -o $PRO_FILE
+
+echo "CODECFORTR = UTF-8" >> $PRO_FILE
+echo "include(fvm2.pri)" >> $PRO_FILE
+
+# for f in `ls --color=never lang/`; do lrelease lang/$f; done
+
+$QMAKE

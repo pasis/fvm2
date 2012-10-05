@@ -1,0 +1,56 @@
+FVM2 - F Virtual Machine v2
+Copyright Dmitry Podgorny <pasis.ua@gmail.com>
+
+This code is free software; you can redistribute it and/or modify it under the
+terms of GNU Lesser General Public License.
+
+Common
+==================
+
+FVM2 is VM for running such machines as Markov algorithms, Turing machine and
+so on. VM has debugger with step mode and breakpoints. The primary purpose of
+this project is to help students with studying such a subject as Theory of
+computation. FVM2 shows how complex code works within a real machine.
+
+Currently the only implemented machine is Markov algorithms. Double click on
+machine in the list activates the machine.
+
+There is machine specific section in the bottom of the window. Usually it
+contains memory of machine. For Markov algoritms it is possible to set/change
+memory before execution or while execution is in step mode. Every change to
+the text line immediately stores whole string to the machine's memory (you
+don't have to press enter).
+
+Text area on the left of the window is for executing code. Text line below is
+for executing a single command while machine runs.
+
+Breakpoints are set to the pointer of the text area. Breakpoint means that
+machine switches to the step mode before executing the marked command.
+
+
+Markov algorithms
+==================
+
+There are some special symbols or sequences in the "language":
+ * E	is empty string. For example, "1->E" means that string "1" will be
+	erased after execution. Current implementation assumes string "E" is
+	equal to empty string. I.e. "1->E" and "1->" are equivalent.
+ * ->	is operator.
+ * .	is termination symbol. When it is the first symbol after operator ->
+	machine recognizes command as the last. Symbol "." must appear only as
+	the first symbol after "->".
+ * #	is just an ordinary symbol, but it is usually used as separator for
+	variables. For example, if you want to set 3 variables x=1, y=2, z=3
+	to memory it can be done in the following way: "1#11#111". Of course how
+	you set and recognize variables is the only your deal :-).
+
+You can find examples of code in docs/examples. Example vm_markov_3^x-2y.fvm
+gets 2 variables and returns 3^x - 2*y. Variables must be set to the memory
+before execution. For example, if you want to set x=5, y=3 you need to fill
+text line with string "11111#111".
+Pay attention! Usually Markov algorithms operates with unary numbers as shown
+above and in example. 2 is 11, 5 is 11111 and so on.
+
+
+P.S. Sorry, the rest documentation is in unkrainian or russian languages
+P.P.S. This is old project and not supported at the moment

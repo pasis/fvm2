@@ -1,0 +1,8 @@
+ <!DOCTYPE RCC><RCC version="1.0">
+ <qresource>
+     <file>lang/fvm_en.qm</file>
+     <file>lang/fvm_ru.qm</file>
+     <file>lang/fvm_uk.qm</file>
+ </qresource>
+ </RCC>
+
