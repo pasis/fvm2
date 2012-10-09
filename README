@@ -2,15 +2,15 @@ FVM2 - F Virtual Machine v2
 Copyright Dmitry Podgorny <pasis.ua@gmail.com>
 
 This code is free software; you can redistribute it and/or modify it under the
-terms of GNU Lesser General Public License.
+terms of GNU General Public License.
 
 Common
 ==================
 
-FVM2 is VM for running such machines as Markov algorithms, Turing machine and
-so on. VM has debugger with step mode and breakpoints. The primary purpose of
-this project is to help students with studying such a subject as Theory of
-computation. FVM2 shows how complex code works within a real machine.
+FVM2 is VM for running machines like Markov algorithms, Turing machine and
+so on. FVM2 has debugger with step mode and breakpoints. Goal of this project
+is to help students with studying Theory of computation. FVM2 shows how
+complex code works within a real machine.
 
 Currently the only implemented machine is Markov algorithms. Double click on
 machine in the list activates the machine.
