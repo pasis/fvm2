@@ -1,0 +1,11 @@
+Gentoo Linux users can easily install fvm2 from 'stuff' overlay:
+
+	layman -a stuff
+	emerge sci-mathematics/fvm2
+
+If you are not Gentoo Linux user just follow instructions:
+
+1. cd src/ directory
+2. run ./configure script
+3. run make
+4. the above actions produce executable file fvm2

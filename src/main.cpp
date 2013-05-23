@@ -1,5 +1,5 @@
 /* FVM2 (F Virtual Machine v2)
- * Copyright Dmitry Podgorny <pasis.ua@gmail.com>
+ * Copyright (C) Dmitry Podgorny <pasis.ua@gmail.com>
  * This code is free software; you can redistribute it and/or
  * modify it under the terms of GNU Lesser General Public License.
  */

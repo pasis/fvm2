@@ -29,6 +29,6 @@ $QMAKE -project -o $PRO_FILE
 echo "CODECFORTR = UTF-8" >> $PRO_FILE
 echo "include(fvm2.pri)" >> $PRO_FILE
 
-# for f in `ls --color=never lang/`; do lrelease lang/$f; done
+for f in lang/*.ts; do lrelease $f; done
 
 $QMAKE
