@@ -17,18 +17,24 @@ fi
 # Variables
 ###############################################################
 
-PRO_FILE="fvm2.pro"
-QMAKE="qmake"
+if type qmake-qt4 >/dev/null 2>&1; then
+	QMAKE="qmake-qt4"
+elif type qmake >/dev/null 2>&1; then
+	QMAKE="qmake"
+else
+	echo "qmake program hasn't been found! Check your QT installation."
+	exit 1
+fi
 
 ###############################################################
 # Configure
 ###############################################################
 
-$QMAKE -project -o $PRO_FILE
+echo -n "Generating Makefile... "
 
-echo "CODECFORTR = UTF-8" >> $PRO_FILE
-echo "include(fvm2.pri)" >> $PRO_FILE
-
-for f in lang/*.ts; do lrelease $f; done
-
-$QMAKE
+if $QMAKE; then
+	echo "success"
+	echo "Now run make to build fvm2"
+else
+	echo "failed"
+fi
