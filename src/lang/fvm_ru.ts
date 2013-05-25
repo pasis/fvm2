@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="1.1" language="ru_RU">
+<!DOCTYPE TS>
+<TS version="2.0" language="ru_RU">
 <defaultcodec>UTF-8</defaultcodec>
 <context>
     <name>GUI</name>
@@ -9,17 +10,22 @@
         <translation>Режими</translation>
     </message>
     <message>
+        <location filename="../gui.cpp" line="161"/>
         <location filename="../gui.cpp" line="210"/>
         <source>Step mode</source>
         <translation>Пошаговый режим</translation>
     </message>
     <message>
+        <location filename="../gui.cpp" line="163"/>
         <location filename="../gui.cpp" line="206"/>
         <source>Read only</source>
         <translation>Только для чтения</translation>
     </message>
     <message>
+        <location filename="../gui.cpp" line="171"/>
+        <location filename="../gui.cpp" line="213"/>
         <location filename="../gui.cpp" line="515"/>
+        <location filename="../gui.cpp" line="516"/>
         <source>Execute / Step</source>
         <translation>Выполнить / Шаг</translation>
     </message>
@@ -74,6 +80,7 @@
         <translation>&amp;Помощь</translation>
     </message>
     <message>
+        <location filename="../gui.cpp" line="224"/>
         <location filename="../gui.cpp" line="317"/>
         <source>About FVM</source>
         <translation>Про программу</translation>
@@ -100,31 +107,34 @@
     </message>
     <message>
         <location filename="../gui.cpp" line="316"/>
-        <source>License: GPL2 or later</source>
-        <translation>Лицензия: GPL2 or later</translation>
+        <source>License: GPL3 or later</source>
+        <translation>Лицензия: GPL3 or later</translation>
     </message>
     <message>
-        <location filename="../gui.cpp" line="521"/>
+        <location filename="../gui.cpp" line="487"/>
+        <location filename="../gui.cpp" line="519"/>
+        <location filename="../gui.cpp" line="522"/>
         <source>Notification</source>
         <translation>Уведомление</translation>
     </message>
     <message>
-        <location filename="../gui.cpp" line="486"/>
+        <location filename="../gui.cpp" line="487"/>
         <source>Select a machine</source>
         <translation>Выберите машину</translation>
     </message>
     <message>
         <location filename="../gui.cpp" line="497"/>
+        <location filename="../gui.cpp" line="498"/>
         <source>Stop</source>
         <translation>Остановить</translation>
     </message>
     <message>
-        <location filename="../gui.cpp" line="518"/>
+        <location filename="../gui.cpp" line="519"/>
         <source>Runtime error!</source>
         <translation>Ошибка во время выполнения!</translation>
     </message>
     <message>
-        <location filename="../gui.cpp" line="521"/>
+        <location filename="../gui.cpp" line="522"/>
         <source>Execution completed</source>
         <translation>Выполнение завершено</translation>
     </message>
@@ -132,6 +142,14 @@
         <location filename="../gui.cpp" line="215"/>
         <source>&amp;Language</source>
         <translation>&amp;Язык</translation>
+    </message>
+</context>
+<context>
+    <name>HelpBrowser</name>
+    <message>
+        <location filename="../help.cpp" line="27"/>
+        <source>Help</source>
+        <translation>Помощь</translation>
     </message>
 </context>
 <context>

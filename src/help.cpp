@@ -24,7 +24,7 @@ HelpBrowser::HelpBrowser() {
 	buttonForward->setText(QString(">"));
 	buttonForward->setFixedWidth(25);
 
-	setWindowTitle(QString().fromUtf8("Допомога"));
+	setWindowTitle(tr("Help"));
 
 	connect(buttonBack, SIGNAL(clicked(bool)), browser, SLOT(backward()));
 	connect(buttonForward, SIGNAL(clicked(bool)), browser, SLOT(forward()));

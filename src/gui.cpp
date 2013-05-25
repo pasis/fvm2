@@ -313,7 +313,7 @@ void GUI::about() {
 	if ( aboutMessage == NULL ) {
 
 		aboutMessage	= new QMessageBox(this);
-		aboutMessage->setText(tr("F Virtual Machine") + QString("\n\n") + tr("Version") + QString(": ") + QString::fromUtf8(VERSION) + QString("\n") + tr("Author: Dmitry Podgorny <pasis.ua@gmail.com>") + QString("\n") + tr("License: GPL2 or later"));
+		aboutMessage->setText(tr("F Virtual Machine") + QString("\n\n") + tr("Version") + QString(": ") + QString::fromUtf8(VERSION) + QString("\n") + tr("Author: Dmitry Podgorny <pasis.ua@gmail.com>") + QString("\n") + tr("License: GPL3 or later"));
 		aboutMessage->setWindowTitle(tr("About FVM"));
 		aboutMessage->setIconPixmap(QPixmap("img/about.png"));
 
