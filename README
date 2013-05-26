@@ -8,8 +8,8 @@ later version.
 Common
 ==================
 
-FVM2 is VM for running machines like Markov algorithms, Turing machine and
-so on. FVM2 has debugger with step mode and breakpoints. Goal of this project
+FVM2 is VM for running machines like Markov algorithm, Turing machine and so
+on. FVM2 has debugger with step mode and breakpoints. Goal of this project
 is to help students with studying Theory of computation. FVM2 shows how
 complex code works within a real machine.
 
@@ -42,13 +42,18 @@ There are some special symbols or sequences in the "language":
 	the first symbol after "->".
  * #	is just an ordinary symbol, but it is usually used as separator for
 	variables. For example, if you want to set 3 variables x=1, y=2, z=3
-	to memory it can be done in the following way: "1#11#111". Of course how
-	you set and recognize variables is the only your deal :-).
+	to memory it can be done in the following way: "1#11#111". Of course
+	how you set and recognize variables is the only your deal :-).
 
-You can find examples of code in examples/ dir. Example vm_markov_3^x-2y.fvm
-gets 2 variables and returns (3 power x - 2y). Variables must be set to the
-memory before execution. For example, if you want to set x=5, y=3 you need to
-fill text line with string "11111#111".
+You can find examples of code in examples/ directory. As comments in code ain't
+supported yet descriptions and explanations of examples can be found at
+sourforge wiki[2].
 
-Pay attention! Usually Markov algorithms operates with unary numbers as shown
-above and in example. 2 is 11, 5 is 11111 and so on.
+Pay attention! Some Markov algorithm programs operate with unary numbers.
+
+Links
+==================
+
+[1] SourceForge project page -- https://sourceforge.net/projects/fvm2/
+[2] SourceForge Wiki -- https://sourceforge.net/p/fvm2/wiki/Home/
+[3] GitHub project page -- https://github.com/pasis/fvm2
