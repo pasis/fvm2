@@ -45,13 +45,10 @@ There are some special symbols or sequences in the "language":
 	to memory it can be done in the following way: "1#11#111". Of course how
 	you set and recognize variables is the only your deal :-).
 
-You can find examples of code in docs/examples. Example vm_markov_3^x-2y.fvm
-gets 2 variables and returns 3^x - 2*y. Variables must be set to the memory
-before execution. For example, if you want to set x=5, y=3 you need to fill
-text line with string "11111#111".
+You can find examples of code in examples/ dir. Example vm_markov_3^x-2y.fvm
+gets 2 variables and returns (3 power x - 2y). Variables must be set to the
+memory before execution. For example, if you want to set x=5, y=3 you need to
+fill text line with string "11111#111".
+
 Pay attention! Usually Markov algorithms operates with unary numbers as shown
 above and in example. 2 is 11, 5 is 11111 and so on.
-
-
-P.S. Sorry, the rest documentation is in ukrainian or russian languages
-P.P.S. This is old project and not supported at the moment
