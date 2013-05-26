@@ -34,6 +34,6 @@ int main(int argc, char **argv) {
 	vmMarkov	markov(&machine);
 	machine.addMachine(&markov);
 
-	app.exec();
+	return app.exec();
 
 }
