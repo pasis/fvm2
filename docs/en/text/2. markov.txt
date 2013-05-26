@@ -1,0 +1,17 @@
+CHAPTER 2. MARKOV ALGORITHM
+
+2.1 Machine specific window
+    This part of the main window contains the only line that represents memory
+    of machine. You can change memory content and changes are applied
+    immediately. Note, while execution in continuous mode memory is locked and
+    you can't change it.
+
+2.2 Description
+    Code of Markov algorithm is set of rules that look like "str1->str2" where
+    string before operator -> is replaced with one that follows the operator.
+    Every time the first rule that can be applied is chosen for execution. The
+    last operation is marked with "->.". This means if rule with a dot that
+    follows operator -> is executed machine is stopped and execution is
+    completed.
+
+2.3 Bugs

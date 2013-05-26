@@ -1,0 +1,49 @@
+CHAPTER 1
+    In this chapter main functionality is described.
+
+1.1 Main window
+    The main window of FVM2 is splitted to 3 parts: code, control and virtual
+    machine's window.
+
+1.2 Menu
+    Important choices of menu are File->Open and File->Save that provide
+    functionality of loading source code from disk and saving it to disk
+    respectively.
+
+1.3 Virtual machine selection
+    Control part of main window contains a frame with list of supported
+    virtual machines. Double click on an item activates respective machine.
+
+1.4 Virtual machine's window
+    This part of the main window appears only after selection of virtual
+    machine. View of this additional window is machine-specific and provided
+    by respective module. Usually it contains "memory" of machine.
+
+1.5 Editing of code
+    Code part consists of 2 elements: area with code and line for execution
+    single command.
+    FVM2 supports highlighting of syntax when virtual machine provides
+    keywords. Line that will be executed next is highlited with gray color and
+    lines with breakpoints are highlighted with red color.
+    While execution of main program a single command may be executed. For this
+    type command in the line just under the area with code and press enter.
+    Note, machine must be running in order to execute single command.
+    Line for typing single command saves history of commands. You can get
+    previously typed commands by pressing up.
+
+1.6 Execution of code
+
+    1.6.1 Modes
+          There are two modes: step mode and continuous mode.
+          In continuous mode result is shown only when execution is finished
+          or interruped. You can switch machine to step mode while running in
+          continuous mode.
+          In step mode the only one command is executed and intermediate
+          result is shown.
+
+    1.6.2 Hotkeys
+          F5 - set breakpoint
+          F6 - set breakpoint and continue execution in continuous mode
+          F7 - make step in step mode
+          F8 - run code in current configuration
+          F9 - run code in continuous mode
